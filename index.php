@@ -82,7 +82,8 @@ $aksi = @$_GET['aksi'];
       <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
         <div class="sb-sidenav-menu">
           <div class="nav">
-            <div class="sb-sidenav-menu-heading">Core</div>
+            <!-- ambil data session login -->
+            <div class="sb-sidenav-menu-heading"><i class="fas fa-user"></i> <?php echo $_SESSION['login']['nama'] ?></div>
             <a class="nav-link" href="index.php">
               <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
               Dashboard
