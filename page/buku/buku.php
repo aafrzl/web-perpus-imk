@@ -41,8 +41,8 @@ $ambilBuku = $conn->query("SELECT * FROM tb_buku ORDER BY jumlah DESC") or die(m
               <td><?= $pecahBuku['id_buku']; ?></td>
               <td><?= $pecahBuku['judul_buku']; ?></td>
               <td><?= $pecahBuku['pengarang']; ?></td>
-              <td><?= $pecahBuku['penerbit']; ?></td>
               <td><?= $pecahBuku['tahun_terbit']; ?></td>
+              <td><?= $pecahBuku['penerbit']; ?></td>
               <td><?= $pecahBuku['jumlah']; ?></td>
               <td>
                 <a href="?p=buku&aksi=ubah&id=<?= $pecahBuku['id_buku']; ?>" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> Edit</a>
