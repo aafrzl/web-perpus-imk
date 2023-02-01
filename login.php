@@ -33,11 +33,11 @@
                   <form action="" method="post">
                     <div class="form-group">
                       <label class="small mb-1" for="username">Username</label>
-                      <input class="form-control py-4" name="username" id="username" type="text" placeholder="Masukan username anda" />
+                      <input class="form-control py-4" name="username" id="username" type="text" placeholder="Masukan username anda" value="admin" />
                     </div>
                     <div class="form-group">
                       <label class="small mb-1" for="password">Password</label>
-                      <input class="form-control py-4" id="password" name="password" type="password" placeholder="Masukan password" />
+                      <input class="form-control py-4" id="password" name="password" type="password" placeholder="Masukan password" value="admin123"/>
                     </div>
                     <div class="text-right">
                       <button type="submit" name="login" class="btn btn-primary">Login</button>
