@@ -26,7 +26,7 @@ $sqlAnggota = $conn->query("SELECT * FROM tb_anggota ORDER BY nama_anggota ASC")
           <th>Jenis Kelamin</th>
           <th>Alamat</th>
           <th>No Hp</th>
-          <th>Aksi</th>
+          <!-- <th>Aksi</th> -->
         </tr>
       </thead>
       <tbody>
@@ -42,10 +42,10 @@ $sqlAnggota = $conn->query("SELECT * FROM tb_anggota ORDER BY nama_anggota ASC")
             <td><?= $jk ?></td>
             <td><?= $pecahAnggota['alamat']; ?></td>
             <td><?= $pecahAnggota['no_telp']; ?></td>
-            <td>
+            <!-- <td>
               <a href="?p=anggota&aksi=ubah&id=<?= $pecahAnggota['id_anggota']; ?>" class="btn btn-info btn-sm"><i class="fa fa-edit"></i> Edit</a>
               <a href="javascript:;" class="btn btn-danger btn-sm" onclick="confirmation('?p=anggota&aksi=hapus&id=<?= $pecahAnggota['id_anggota']; ?>')"><i class="fa fa-trash"></i> Hapus</a>
-            </td>
+            </td> -->
           </tr>
         <?php } ?>
       </tbody>
